@@ -1,5 +1,5 @@
 01 INICIAR_PROJETO("Loja Online - Checkout")
-02 usuario      <- obterUsuarioAutenticado()
+02 usuario      <- obterUsuarioAutentica()
 03 carrinho     <- obterCarrinho(usuario)                // validar entradas
 04 validarCarrinho(carrinho)                             // A pode melhorar msgs
 05 cepEntrega   <- obterEnderecoPadrao(usuario)
@@ -17,4 +17,5 @@
 17     enviarEmailConfirmacao(usuario.email, pedido.id)
 18     limparCarrinho(usuario)
 19     RETORNAR SUCESSO(pedido.id)
+
 20 SENAO RETORNAR ERRO("Pagamento recusado")

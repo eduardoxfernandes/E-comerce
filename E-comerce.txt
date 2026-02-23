@@ -1,5 +1,5 @@
 01 INICIAR_PROJETO("Loja Online - Checkout")
-02 usuario      <- obterUsuarioAutentica()
+02 usuario      <- obterUsuarioAutenticado()
 03 carrinho     <- obterCarrinho(usuario)                // validar entradas
 04 validarCarrinho(carrinho)                             // A pode melhorar msgs
 05 cepEntrega   <- obterEnderecoPadrao(usuario)
